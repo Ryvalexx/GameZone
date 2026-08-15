@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Gaming Website</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #5865F2;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+        nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #181818;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+.hero {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.features {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #181818;
+    padding: 30px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.feature h3 {
+    font-size: 24px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+.contact {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #181818;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+    nav {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .features {
+        padding: 60px 15px;
+    }
+
+    .feature {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>GAMEZONE</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <section id="features" class="features">
+    <h2>Why GAMEZONE?</h2>
+
+    <div class="feature-container">
+
+        <div class="feature">
+            <h3>🎮 Gaming</h3>
+            <p>Discover games and have fun with the community.</p>
+        </div>
+
+        <div class="feature">
+            <h3>👥 Community</h3>
+            <p>Meet other gamers and make new friends.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🏆 Competition</h3>
+            <p>Take on challenges and become the best.</p>
+        </div>
+
+    </div>
+</section>
+    <h1>Welcome to GAMEZONE 🎮</h1>
+
+    <p>Your ultimate gaming community.</p>
+
+    <button onclick="joinWebsite()">Join Now</button>
+</section>
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Want to work with GAMEZONE? Send us a message!</p>
+
+    <button onclick="contactWebsite()">Contact Us</button>
+</section>
+
+    <script>
+    function joinWebsite() {
+        alert("Welcome to my website! 🎮");
+    }
+
+    function contactWebsite() {
+        alert("You can contact GAMEZONE here!");
+    }
+</script>
+
+</body>
+</html>
